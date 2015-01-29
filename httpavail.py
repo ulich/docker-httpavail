@@ -1,7 +1,7 @@
 import sys, requests, argparse
 from retrying import retry
 
-argparser = argparse.ArgumentParser()
+argparser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 argparser.add_argument('url')
 argparser.add_argument('-t', '--timeout', type=int, default=120, help='total timeout in seconds to wait for the url to be available')
 argparser.add_argument('-d', '--delay', type=int, default=1, help='delay in seconds between each retry')
