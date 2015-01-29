@@ -1,6 +1,10 @@
 # docker-httpavail
 
-HTTP availability checker as a docker image.
+HTTP availability checker as a docker image. Performs a HTTP GET request against the given
+URL and retries until either the expected HTTP status code (default: 200) is returned or
+the timeout (default: 120s) is reached.
+
+The exit code is 0 on success or 1 on timeout.
 
 
 ## Example
@@ -32,5 +36,7 @@ optional arguments:
 
 ## Building
 
+```
 docker build -t httpavail .
 docker push ulich/httpavail
+```
