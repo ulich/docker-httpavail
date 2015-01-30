@@ -10,14 +10,14 @@ The exit code is 0 on success or 1 on timeout.
 ## Example
 
 ```
-docker run --rm httpavail https://url-to-check.com:8080/path
+docker run --rm ulich/httpavail https://url-to-check.com:8080/path
 ```
 
 
 ## Usage
 
 ```
-docker run --rm httpavail [-h] [-t TIMEOUT] [-d DELAY] [-s STATUS_CODE] url
+docker run --rm ulich/httpavail [-h] [-t TIMEOUT] [-d DELAY] [-s STATUS_CODE] url
 
 positional arguments:
   url                   the URL to check
