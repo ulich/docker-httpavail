@@ -32,11 +32,3 @@ optional arguments:
   -s STATUS_CODE, --status-code STATUS_CODE
                         expected HTTP status code (default: 200)
 ```
-
-
-## Building
-
-```
-docker build -t httpavail .
-docker push ulich/httpavail
-```
